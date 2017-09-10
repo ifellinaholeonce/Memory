@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+$("#play-button").click(function(){
+	document.getElementById('menu-curtain').style.display='none';
+	document.getElementById('menu-box').style.display='none'
+	Game.startGame();
+});
+
 var Game = {
 
 	initialize: function(){
@@ -79,7 +85,6 @@ var Game = {
     				}
 				Game.cardsList = cards;
 				Game.shuffleCards();
-				Game.startGame();
   				},
   				error: function(err) {
     				console.log(err)
