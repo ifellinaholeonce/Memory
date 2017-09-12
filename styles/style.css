@@ -7,9 +7,9 @@
 	height: 100%;
 	background-color: black;
 	z-index: 1001;
-	-moz-opacity: 0.8;
-		opacity: 80;
-	filter: alpha(opacity=80);
+	-moz-opacity: 0.4;
+		opacity: 40;
+	filter: alpha(opacity=40);
 }
 
 .white-overlay {
@@ -29,6 +29,7 @@
 /**********GAME CONTENT****************/
 .game-window {
 	height: 90%;
+	color: white;
 }
 .row{
 	padding-bottom: 10px;
@@ -48,9 +49,16 @@
 	font-weight: 900;
 }
 
+.front {
+	z-index: 1001;
+	position: relative;
+	top: 75px;
+}
+
 .back {
 	-webkit-transform: rotateY(-180deg);
 		transform: rotateY(-180deg);
+	color: black;
 }
 .card {
 	display: inline-grid;
@@ -86,6 +94,7 @@
 	padding: 20px;
 	padding-bottom: 40px;
 	background-color: red;
+	color: white;
 }
 
 .score, .timer {
