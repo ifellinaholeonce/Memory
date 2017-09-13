@@ -37,6 +37,7 @@ body {
 	color: white;
 	position: relative;
 	left: 10px;
+	padding-top: 10px;
 }
 .row{
 	padding-bottom: 5px;
@@ -83,7 +84,7 @@ body {
 
 .card.flipped {
 	background-color: white;
-	font-weight: 800;
+	font-weight: 300;
 	border: 2px solid black;
 }
 
