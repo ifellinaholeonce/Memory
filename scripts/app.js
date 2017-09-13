@@ -126,7 +126,7 @@ var Game = {
 
 	timer: function(){
 		const timer = document.getElementsByClassName('timer')[0];
-		timer.innerHTML = "Timer: " + Game.seconds;
+		timer.innerHTML = " " + Game.seconds;
 		t = setTimeout(function(){
 			Game.seconds++;
 			Game.deductions = Math.floor(Game.seconds/10);
